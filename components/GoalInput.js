@@ -23,8 +23,6 @@ function GoalInput(props) {
       />
 
       <Button title="ADD" onPress={() => props.onAddGoal(enteredGoal)}></Button>
-      {/** u can also use props.onAddGoal().bind(this(this here
-       * means this attribute or function, bind it to 2nd para), enteredGoal) */}
     </View>
   );
 }
@@ -46,3 +44,8 @@ const styles = StyleSheet.create({
 
 // using props.onAddGoal means u have automatically assigned onAddGoal
 //as an attribute of this function component.
+
+{
+  /** u can also use props.onAddGoal().bind(this(this here
+   * means this attribute or function, bind it to 2nd para), enteredGoal) */
+}
